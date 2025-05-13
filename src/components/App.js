@@ -295,7 +295,6 @@ function App() {
           <h1>{selectedCity.name}</h1>
         </div>
         <div id="city-description">
-          {" "}
           <p>{selectedCity.description}</p>
         </div>
         <div id="landmark-title">
