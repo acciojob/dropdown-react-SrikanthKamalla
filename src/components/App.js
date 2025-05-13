@@ -300,7 +300,7 @@ function App() {
         <div id="landmark-title">
           <h1>{selectedLandmark.name}</h1>
         </div>
-        <div id="landmarks-description">
+        <div id="landmark-description">
           <p>{selectedLandmark.description}</p>
         </div>
       </div>
