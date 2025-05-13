@@ -284,8 +284,8 @@ function App() {
         </label>
       </div>
 
-      <div id="state-title">
-        <div id="state-name">
+      <div>
+        <div id="state-title">
           <h1>{selectedState.name}</h1>
         </div>
         <div id="state-description">
