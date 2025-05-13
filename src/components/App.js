@@ -284,7 +284,7 @@ function App() {
         </label>
       </div>
 
-      <div>
+      <div id="state-title">
         <div id="state-name">
           <h1>{selectedState.name}</h1>
         </div>
