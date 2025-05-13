@@ -247,7 +247,7 @@ function App() {
           <select value={stateIndex} onChange={handleStateChange} id="state">
             {states.map((state, idx) => (
               <option key={idx} value={idx}>
-                {state.name}
+                {state?.name}
               </option>
             ))}
           </select>
@@ -258,9 +258,9 @@ function App() {
         <label>
           City:{" "}
           <select value={cityIndex} onChange={handleCityChange} id="city">
-            {selectedState.city.map((city, idx) => (
+            {selectedState?.city.map((city, idx) => (
               <option key={idx} value={idx}>
-                {city.name}
+                {city?.name}
               </option>
             ))}
           </select>
@@ -275,9 +275,9 @@ function App() {
             onChange={handleLandmarkChange}
             id="landmark"
           >
-            {selectedCity.landmarks.map((lMark, idx) => (
+            {selectedCity?.landmarks.map((lMark, idx) => (
               <option key={idx} value={idx}>
-                {lMark.name}
+                {lMark?.name}
               </option>
             ))}
           </select>
@@ -286,22 +286,22 @@ function App() {
 
       <div>
         <div id="state-title">
-          <h1>{selectedState.name}</h1>
+          <h1>{selectedState?.name}</h1>
         </div>
         <div id="state-description">
-          <p>{selectedState.description}</p>
+          <p>{selectedState?.description}</p>
         </div>
         <div id="city-title">
-          <h1>{selectedCity.name}</h1>
+          <h1>{selectedCity?.name}</h1>
         </div>
         <div id="city-description">
-          <p>{selectedCity.description}</p>
+          <p>{selectedCity?.description}</p>
         </div>
         <div id="landmark-title">
-          <h1>{selectedLandmark.name}</h1>
+          <h1>{selectedLandmark?.name}</h1>
         </div>
         <div id="landmark-description">
-          <p>{selectedLandmark.description}</p>
+          <p>{selectedLandmark?.description}</p>
         </div>
       </div>
     </div>
